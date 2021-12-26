@@ -24,5 +24,5 @@ func Login(c *gin.Context, UserId string) {
 	session := sessions.Default(c)
 	session.Set("UserId", UserId)
 	session.Save()
-	log.Println("session:", session)
+	log.Println("sessionの中身", session)
 }
